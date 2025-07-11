@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SentinelX Cyber Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="matrixScroll"></canvas>
+  <header>
+    <h1>SentinelX Cyber Portal</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Threat Lab</a>
+      <a href="#">Admin</a>
+      <a href="#" id="driveBtn">Google Drive</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="alert">🚨 ALERT: Intrusion Detected. Analyst Required. 🚨</div>
+
+    <h2>Welcome, Analyst</h2>
+    <p><b>Clue:</b> Secrets are encrypted using Base64 and Caesar ciphers.<br>
+    Try decoding clues in the source code comments or use the console.</p>
+
+    <div class="console" id="console">
+      > System Status: SECURE<br>
+      > Tip: Type <code>decrypt()</code> or use the chatbot below.
+    </div>
+
+    <div class="chatbot">
+      <div id="chatlog"></div>
+      <input type="text" id="chatInput" placeholder="Ask SentinelX something...">
+    </div>
+  </main>
+
+  <footer>&copy; 2025 SentinelX Cybersecurity. All rights reserved.</footer>
+
+  <!-- Embedded secrets -->
+  <!-- #1 Base64: UFBPUlRBTF9BQ0NFU1NfR1JBTlRFRA== -->
+  <!-- #2 Caesar shift 7: Aopz pz h zhfily av dvysk! -->
+  <!-- #3 Base64: L2FkbWluP3VzZXI9YWRtaW4mcGFzcz1sZXRtZWlu -->
+
+  <script src="script.js"></script>
+</body>
+</html>
